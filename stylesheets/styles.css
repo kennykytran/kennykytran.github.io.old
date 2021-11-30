@@ -1,0 +1,307 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: ubuntu;
+  margin: 0;
+  background: rgb(25, 39, 52);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  max-width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+header>h1 {
+  max-width: 100%;
+  color: white;
+  width: 100vw;
+  padding: 0px, 0px;
+  background: #000000da;
+  font-size: max(8vw, 60px);
+
+  position: absolute;
+  top: 40%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+p {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.parallax {
+  /* photo edited by me */
+  /* background-image: url("https://cdn.discordapp.com/attachments/854940112033677312/909156875663200336/stream_banner.png"); */
+  background-image: url("https://cdn.discordapp.com/attachments/854940112033677312/909156875663200336/stream_banner.png");
+  /* Set a specific height */
+  max-height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row>.column {
+
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.arrow {
+  height: max(4vw, 60px);
+  width: max(4vw, 60px);
+  border-style: solid;
+  border-color: white;
+  border-width: 0px 6px 6px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+
+  vertical-align: 200px;
+}
+
+.arrow:hover {
+  border-bottom-width: 8px;
+  border-right-width: 8px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 150vh;
+}
+
+.text {
+  max-width: 100%;
+  margin: 0 auto;
+  width: 1000px;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.text h2 {
+  padding-left: 10px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+li {
+  line-height: 1.6;
+}
+
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.thumbnail-list {
+  justify-content: left;
+  list-style: inside;
+  padding: 30px 0;
+  text-align: center;
+  white-space: wrap;
+
+}
+
+.thumbnail-item {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  transition: all 300ms;
+}
+
+.thumbnail-item:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+div.card {
+  min-width: max(30vw, 300px);
+  max-width: max(30vw, 300px);
+  width: 80%;
+  background-color: rgb(31, 48, 65);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+}
+
+div.card-text {
+  text-align: center;
+  padding: 5px 20px;
+  color: rgb(20, 193, 184);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+span:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+  transition: all 300ms;
+}
+
+footer {
+  height: 20;
+}
+
+/* .fa-itch-io{
+  background: #007bb5;
+  color: white;
+  padding: 20px;
+  width: 60px;
+  height: 60;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+} */
