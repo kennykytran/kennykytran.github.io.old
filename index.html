@@ -7,10 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kenny Tran</title>
   <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="stylesheets/navbar.css">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/1ea9de50d6.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="/port_icon.ico">
 </head>
 
 <body>
@@ -32,6 +34,88 @@
 
   <div id="start"></div>
 
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="img/PizzaRadar.png" style="width:100%" alt="Pizza Radar UI">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="img/QuizCentral.png" style="width:100%" alt="Quiz Central UI">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="img/Waiting.png" style="width:100%" alt="Stream Waiting Screen">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="img/Overlay.png" style="width:100%" alt="Stream Layout">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <a class="toclose" onclick="closeModal()">&times;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column">
+        <img class="demo cursor" src="img/PizzaRadar.png" style="width:100%" onclick="currentSlide(1)"
+          alt="Pizza Radar UI">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/QuizCentral.png" style="width:100%" onclick="currentSlide(2)"
+          alt="Quiz Central UI">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/Waiting.png" style="width:100%" onclick="currentSlide(3)"
+          alt="Stream Waiting Screen">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/Overlay.png" style="width:100%" onclick="currentSlide(4)" alt="Stream Layout">
+      </div>
+
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="logo-container">
+      <h2 style="color: white;">Kenny Tran</h2>
+    </div>
+    <div class="menu-icon">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul id="nav-list" class="nav-menu">
+      <li class="menu-item">
+        <a href="index.html#">
+          <h3> Home </h3>
+        </a>
+      </li>
+      <li class="menu-item">
+        <a href="webpages/about.html">
+          <h3> About </h3>
+        </a>
+      </li>
+    </ul>
+
+    <div id="nav-toggle" class="menu-icon">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+
+
+
   <div class="tag text" id="EDUCATION" style="color: white; background-color: rgb(25,39,52);">
     <h1>
       EDUCATION
@@ -44,7 +128,7 @@
     </p>
   </div>
 
-  <div class="tag text" style="background-color: rgb(21,32,43); color: white;" id="PROJECTS">
+  <div class="tag text" style="background-color: rgb(20, 29, 39); color: white;" id="PROJECTS">
     <h1>
       PROJECTS
     </h1>
@@ -100,7 +184,88 @@
   </div>
 
 
-  <div class="tag text" style="color: white;" id="EXPERIENCE">
+  <div class="tag text" style=" color: white;" id="CONTRIBUTIONS">
+    <h1>
+      GITHUB CONTRIBUTIONS
+    </h1>
+    <div>
+      <h3 style="color: rgb(20,193,184);">
+        Lead Developer — Video Game “Github VN”
+      </h3>
+      <h4>November 2021 - Present</h4>
+      <ul>
+        <li>Creating an open source project with detailed documentation.</li>
+        <li>Utilized the Ren'py engine develop the initial game..</li>
+        <li>Provided numerous resouces to encourage others to contribute to the project</li>
+      </ul>
+      <ul class="thumbnail-list">
+        <li class="thumbnail-item">
+          <a href="https://github.com/ktranfullerton2000/GitHubVN" target="_blank" rel="noopener noreferrer">
+            <div class="card">
+              <img style="border-radius: 25px 25px 0px 0px; width: max(30vw, 300px);" src="img/GithubVN.png"
+                alt="GitHubVN">
+              <div class="card-text">
+                <h2>GitHubVN Repository</h2>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3 style="color: rgb(20,193,184);">
+        Contributor — Video Game “Necromancer”
+      </h3>
+      <h4>November 2021</h4>
+      <ul>
+        <li>Fixed graphical issues in a unity game development project.</li>
+        <li>Developed and tested solutions in the Unity Engine.</li>
+        <li>implemented parallax background with custom pixel art made in Aseprite.</li>
+      </ul>
+      <ul class="thumbnail-list">
+        <li class="thumbnail-item">
+          <a href="https://github.com/rclamb27/First-Necromancer-Game" target="_blank" rel="noopener noreferrer">
+            <div class="card">
+              <img style="border-radius: 25px 25px 0px 0px; width: max(30vw, 300px);" src="img/GithubNecro.png"
+                alt="Necromancer">
+              <div class="card-text">
+                <h2>Necromancer Repository</h2>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3 style="color: rgb(20,193,184);">
+        Contibutor — Web Application “Tictactoe”
+      </h3>
+      <h4>September 2021</h4>
+      <ul>
+        <li>Fixed several HTML and Javascript errors found in the console.</li>
+        <li>Designed a new dark mode for the website that alters text and the play area.</li>
+        <li>Seperated resetting the game from resetting the music.</li>
+      </ul>
+      <ul class="thumbnail-list">
+        <li class="thumbnail-item">
+          <a href="https://github.com/yelynn1/tictactoe" target="_blank" rel="noopener noreferrer">
+            <div class="card">
+              <img style="border-radius: 25px 25px 0px 0px; width: max(30vw, 300px);" src="img/GithubTTT.png"
+                alt="Tictactoe">
+              <div class="card-text">
+                <h2>Tictactoe Repository</h2>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+
+
+  <div class="tag text" style="background-color: rgb(20, 29, 39); color: white;" id="EXPERIENCE">
     <h1>
       EXPERIENCE
     </h1>
@@ -131,7 +296,7 @@
     </div>
   </div>
 
-  <div class="tag text" id="SKILLS" style="color: white; background-color: rgb(21,32,43);">
+  <div class="tag text" id="SKILLS" style="color: white; ">
     <h1>
       SKILLS
     </h1>
@@ -146,7 +311,7 @@
     </ul>
   </div>
 
-  <div class="tag text" id="CERTIFICATIONS" style="background-color: rgb(25,39,52); color: white;">
+  <div class="tag text" id="CERTIFICATIONS" style="background-color: rgb(20, 29, 39); color: white;">
     <h1>
       CERTIFICATIONS
     </h1>
@@ -171,8 +336,8 @@
       </ul>
     </div>
   </div>
-
-  <div class="row text tag" style="color: white; background-color: rgb(21,32,43); ">
+  <!-- FIX BELOW OR USE LETTERBOX FROM NFT(CRINGE) DUDE -->
+  <div class="row text tag" style="color: white; ">
     <h1>DESIGN EXAMPLES</h1>
     <h3 style="color: rgb(20,193,184);">
       Select one of the following designs to open the letter-box
@@ -195,7 +360,7 @@
     </div>
   </div>
 
-  <div class="tag text" id="SOCIAL">
+  <div class="tag text" id="SOCIAL" style="background-color: rgb(20, 29, 39);">
     <h1 style="color: white;">
       SOCIALS
     </h1>
@@ -222,59 +387,13 @@
     </a>
   </div>
 
-  <div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
 
-      <div class="mySlides">
-        <div class="numbertext">1 / 4</div>
-        <img src="img/PizzaRadar.png" style="width:100%" alt="Pizza Radar UI">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">2 / 4</div>
-        <img src="img/QuizCentral.png" style="width:100%" alt="Quiz Central UI">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">3 / 4</div>
-        <img src="img/Waiting.png" style="width:100%" alt="Stream Waiting Screen">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">4 / 4</div>
-        <img src="img/Overlay.png" style="width:100%" alt="Stream Layout">
-      </div>
-
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-      <div class="caption-container">
-        <p id="caption"></p>
-      </div>
-
-
-      <div class="column">
-        <img class="demo cursor" src="img/PizzaRadar.png" style="width:100%" onclick="currentSlide(1)"
-          alt="Pizza Radar UI">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="img/QuizCentral.png" style="width:100%" onclick="currentSlide(2)"
-          alt="Quiz Central UI">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="img/Waiting.png" style="width:100%" onclick="currentSlide(3)"
-          alt="Stream Waiting Screen">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="img/Overlay.png" style="width:100%" onclick="currentSlide(4)" alt="Stream Layout">
-      </div>
-    </div>
-  </div>
   <script src="scripts/index.js"></script>
+  <script src="scripts/navbar.js"> </script>
+  <script src="scripts/letterbox.js"> </script>
 
   <footer>
-    <p style="text-align: center; color: white; background-color: rgb(21,32,43); color: rgb(20,193,184)">
+    <p style="text-align: center; color: white; background-color: rgb(20, 29, 39); color: rgb(20,193,184)">
       Site Created by Kenny Tran
 
     </p>

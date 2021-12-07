@@ -1,0 +1,98 @@
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(20, 193, 184);
+    transition: all 300ms;
+}
+
+.navbar {
+    /* make it stick */
+    max-width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    /* in front of all other elements */
+    z-index: 99;
+    /* set background */
+    background-color: rgb(9, 15, 20);
+    padding: 10px 5%;
+
+    /* define flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-image {
+    display: block;
+    height: 48px
+}
+
+.nav-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.bar {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin: 4px auto;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .logo-container {
+        width: 100%;
+    }
+
+    .nav-menu {
+        width: 100%;
+    }
+
+    .menu-item {
+        display: block;
+        width: 100%;
+        padding: 0px 10px;
+        text-align: end;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 5%;
+    }
+
+    .menu-icon:hover .bar {
+        background-color: rgb(20, 193, 184);
+        transition: all 300ms;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+    }
+    
+    .active {
+        display: block;
+    }
+}
+
