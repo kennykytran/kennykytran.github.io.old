@@ -120,6 +120,19 @@ p {
     right: 0;
     border-radius: 9px 0 0 9px;
   }
+  .parallax {
+  /* photo edited by me */
+  /* background-image: url("https://cdn.discordapp.com/attachments/854940112033677312/909156875663200336/stream_banner.png"); */
+  background-image: url("https://cdn.discordapp.com/attachments/854940112033677312/909156875663200336/stream_banner.png");
+  /* Set a specific height */
+  max-height: 1000px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 }
 
 .close:hover,
