@@ -24,7 +24,7 @@ article {
     flex-direction: column;
   }
   .nav2{
-    padding: 0px;
+    padding: 10px;
     margin: auto;
   }
 }
