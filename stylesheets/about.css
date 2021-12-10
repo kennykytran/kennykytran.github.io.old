@@ -18,8 +18,8 @@ article {
   padding: 10px;
 }
 
-@media (max-width: 650px) {
-  section {
+@media (max-width: 800px) {
+  .section {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
