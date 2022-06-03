@@ -43,7 +43,7 @@ p {
 .parallax {
   /* photo edited by me */
   /* background-image: url("https://cdn.discordapp.com/attachments/854940112033677312/909156875663200336/stream_banner.png"); */
-  background-image: url("https://cdn.discordapp.com/attachments/854940112033677312/909156875663200336/stream_banner.png");
+  background-image: url("https://cdn.discordapp.com/attachments/458701567366004737/982056528775372841/bg1.png");
   /* Set a specific height */
   max-height: 100vh;
 
@@ -123,7 +123,7 @@ p {
   .parallax {
   /* photo edited by me */
   /* background-image: url("https://cdn.discordapp.com/attachments/854940112033677312/909156875663200336/stream_banner.png"); */
-  background-image: url("https://cdn.discordapp.com/attachments/854940112033677312/909156875663200336/stream_banner.png");
+  background-image: url("https://cdn.discordapp.com/attachments/458701567366004737/982056528775372841/bg1.png");
   /* Set a specific height */
   max-height: 1000px;
 
@@ -239,7 +239,7 @@ img.hover-shadow {
   height: max(4vw, 60px);
   width: max(4vw, 60px);
   border-style: solid;
-  border-color: white;
+  border-color: #000000da;
   border-width: 0px 6px 6px 0px;
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
@@ -293,6 +293,7 @@ li {
 }
 
 .thumbnail-list {
+  flex-direction: row;
   justify-content: left;
   list-style: inside;
   padding: 30px 0;
@@ -306,6 +307,7 @@ li {
   text-align: center;
   margin: auto;
   transition: all 300ms;
+  padding: 10px 10px;
 }
 
 .thumbnail-item:hover {
@@ -316,7 +318,16 @@ li {
 div.card {
   min-width: max(30vw, 300px);
   max-width: max(30vw, 300px);
-  width: 80%;
+  width: 60%;
+  background-color: rgb(31, 48, 65);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+}
+
+div.card-tapas {
+  min-width: max(15vw, 300px);
+  max-width: max(15vw, 300px);
+  width: 60%;
   background-color: rgb(31, 48, 65);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 25px;
