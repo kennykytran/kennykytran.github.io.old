@@ -333,6 +333,15 @@ div.card-tapas {
   border-radius: 25px;
 }
 
+div.card-projects {
+  min-width: max(15vw, 300px);
+  max-width: max(15vw, 300px);
+  width: 60%;
+  background-color: rgb(31, 48, 65);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+}
+
 div.card-text {
   text-align: center;
   padding: 5px 20px;
@@ -366,5 +375,9 @@ footer {
   border-radius: 50%;
 } */
 
-
+.division{
+  width:50%;
+  height:100px;
+  float:left;
+}
 
